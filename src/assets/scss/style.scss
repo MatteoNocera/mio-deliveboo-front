@@ -1,0 +1,84 @@
+@use "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+/* #region Color palette */
+
+$light-pink: #ffadad;
+$orange: #ffd6a5;
+$dark-pink: #eb585b;
+$yellow: #fdffb6;
+$back: #ffadad48;
+
+.bg_my_back {
+    background-color: $back;
+}
+
+.bg_my_light-pink {
+    background-color: $light-pink;
+}
+
+.bg_my_orange {
+    background-color: $orange;
+}
+
+.bg_my_dark-pink {
+    background-color: $dark-pink;
+}
+
+.bg_my_yellow {
+    background-color: $yellow;
+}
+
+.my_text_light-pink {
+    color: $light-pink;
+}
+
+.my_text_orange {
+    color: $orange;
+}
+
+.my_text_dark-pink {
+    color: $dark-pink;
+}
+
+.my_text_yellow {
+    color: $yellow;
+}
+
+
+/* #endregion Color palette */
+
+/* Font */
+
+* {
+    font-family: 'Bree Serif', serif;
+}
+
+header {
+    background-color: $back;
+
+    .my_logo_title {
+        color: $dark-pink;
+    }
+}
+
+.jumbotron {
+    background-color: $orange;
+    color: $dark-pink;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.animated_card:hover {
+    transform: scale(1.05);
+    /* Effetto di zoom-in al passaggio del mouse */
+    transition: transform 0.3s ease;
+    /* Animazione smooth del cambiamento */
+}
